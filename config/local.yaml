@@ -1,0 +1,9 @@
+env: "local" # local, dev, prod
+storage_path: "C:/dev/projects/url-shortener/storage/storage.db" # где будет храниться БД
+http_server:
+  address: "localhost:8082"
+  timeout: 4s # время на чтение запроса и также же время на отправку ответа. Время на обработку не бдует ограничено
+  idle_timeout: 60s # время жизни соединения с клиентом (если от одного клиента приходит несколько запросов в короткое время - то используем одно соединение)
+  user: "myuser"
+  password: "mypass"
+
